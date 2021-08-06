@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {  
+html {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
@@ -60,8 +60,6 @@ html {
 
 .content {
 }
-
-
 
 nav > ul > li > a {
   color: white;
@@ -125,8 +123,9 @@ nav li:hover .navigation_bar__left__subnav {
 }
 
 .content {
-  padding: 64px 0;
+  padding: 64px 5px;
   width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -185,151 +184,140 @@ nav li:hover .navigation_bar__left__subnav {
   background-color: white;
   color: black;
   width: 100%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   text-align: justify;
+  margin-right: 30px;
 }
 .tour .tour__content li {
-    font-size:15px;
-    padding: 11px 16px;
-    border-bottom: solid #ccc 1px;
-    color: #757575;
-    list-style: none;
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: solid #ccc 1px;
+  color: #757575;
+  list-style: none;
 }
-.tour .tour__content .sold-out{
-    color: white;
-    background-color: red;
-    padding: 4px 4px;
-    margin-left: 20px;
-}
-
-.tour .tour__content .quantity{
-    background-color: black;
-    color: white;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 24px;
-    float: right;
-   
-
+.tour .tour__content .sold-out {
+  color: white;
+  background-color: red;
+  padding: 4px 4px;
+  margin-left: 20px;
 }
 
-.tour-places{
-    display: flex;
-    
-}
-.tour-places__place + .tour-places__place{
-    margin-left: 16px;
-}
-.tour-places__place{
-    margin-top: 30px;
-    
-    background-color: black;
-    color: black;
-    
+.tour .tour__content .quantity {
+  background-color: black;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  float: right;
 }
 
-.tour-places__place--img{
-    width: 100%;
-    display:block;
-  
+.tour-places {
+  display: flex;
 }
-.tour-places__place--img:hover{
- 
+.tour-places__place + .tour-places__place {
+  margin-left: 16px;
+}
+.tour-places__place {
+  margin-top: 30px;
+
+  background-color: black;
+  color: black;
+}
+
+.tour-places__place--img {
+  width: 100%;
+  display: block;
+}
+.tour-places__place--img:hover {
   opacity: 0.4;
 }
-.place-content{
-    padding: 10px;
-    background: white;
+.place-content {
+  padding: 10px;
+  background: white;
 }
-.tour-places__place--heading{
-    font-size: 15px;
-    font-weight: 500px;
-
-}
-
-.tour-places__place--subheadding{
-    margin-top: 10px;
-    font-style: italic;
-    opacity: 50%;
+.tour-places__place--heading {
+  font-size: 15px;
+  font-weight: 500px;
 }
 
-.tour-places__place--description{
-    margin-top: 10px;
-    line-height: 1.4;
-
+.tour-places__place--subheadding {
+  margin-top: 10px;
+  font-style: italic;
+  opacity: 50%;
 }
 
-.tour-places__place--buybtn{
-    background-color: black;
-    color: white;
-    padding: 5px 8px;
-    margin-top: 10px;
-    display: inline-block;
-    text-decoration: none;
+.tour-places__place--description {
+  margin-top: 10px;
+  line-height: 1.4;
 }
-.tour-places__place--buybtn:hover{
-    background: #ccc;
-    color: black;
-    cursor: pointer;
-    
+
+.tour-places__place--buybtn {
+  background-color: black;
+  color: white;
+  padding: 5px 8px;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+.tour-places__place--buybtn:hover {
+  background: #ccc;
+  color: black;
+  cursor: pointer;
 }
 
 .content__contact {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.content__contact .left{
+.content__contact .left {
   flex: 50%;
 }
-.content__contact .right{
-  flex:50%;
+.content__contact .right {
+  flex: 50%;
   margin-left: auto;
 }
 .content__contact .left .left-content {
-    list-style: none;
-    
+  list-style: none;
 }
 
 .left-content {
-    font-size: 18px;
-    line-height: 1.4;
-    margin-right: auto;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-right: auto;
 }
 
-.content__contact .right-form{
-  display:flex;
+.content__contact .right-form {
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
-.right-form input{
+.right-form input {
   font-size: 15px;
-  border: solid 1px #ccc; 
+  border: solid 1px #ccc;
   border-radius: 2px;
-  width:100%
+  width: 100%;
 }
-.right__name{
+.right__name {
   flex: 40%;
   padding: 10px 5px;
   margin-bottom: 15px;
-  
-  
 }
-.right__email{
+.right__email {
   flex: 40%;
   padding: 10px 5px;
   margin-left: 15px;
   margin-bottom: 15px;
 }
-.right__message{
-  flex:100%;
+.right__message {
+  flex: 100%;
   padding: 10px 5px;
 }
 
-.cotent__contact-btn{
+.cotent__contact-btn {
   margin-top: 15px;
   margin-left: auto;
   padding: 5px;
@@ -338,36 +326,34 @@ nav li:hover .navigation_bar__left__subnav {
   border-radius: 2px;
 }
 
-.cotent__contact-btn:hover{
+.cotent__contact-btn:hover {
   background: #ccc;
   color: black;
-  cursor:pointer;
+  cursor: pointer;
 }
-.modal{
-  
+.modal {
   align-items: center;
   justify-content: center;
   position: fixed;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
-.display_flex{
-  display:flex;
+.display_flex {
+  display: flex;
 }
-.modal-container{
-  width:50%;
+.modal-container {
+  width: 50%;
   background: white;
   min-height: 30%;
   position: relative;
   animation: modalSlideDown ease 1s;
-  
 }
 
-.modal-close{
+.modal-close {
   position: absolute;
   right: 0;
   padding: 15px;
@@ -375,105 +361,94 @@ nav li:hover .navigation_bar__left__subnav {
   font-size: 1.5rem;
   border-radius: 5px;
 }
-.modal-close:hover{
+.modal-close:hover {
   color: black;
   background-color: #ccc;
   opacity: 0.8;
-  cursor:pointer;
-  
+  cursor: pointer;
 }
-.modal-header{
+.modal-header {
   background: #009688;
   color: white;
   height: 125px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 30px;
 }
 
-.modal-label-ticket{
+.modal-label-ticket {
   padding-left: 10px;
-  
 }
 
-.modal-body{
+.modal-body {
   padding: 10px;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
-.modal-label{
+.modal-label {
   font-size: 15px;
   margin: 10px 0;
 }
 
-.modal-input{
+.modal-input {
   border: 1px solid #ccc;
   padding: 10px;
-  font-size:15px;
+  font-size: 15px;
   border-radius: 2px;
 }
 
-
-#pay-ticket{
-  margin: 10px 0 ;
-  height:50px;
+#pay-ticket {
+  margin: 10px 0;
+  height: 50px;
   background: #009688;
   color: white;
   font-size: 20px;
   text-transform: uppercase;
   border-radius: 2px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-
-
-.modal-footer{
-
+.modal-footer {
 }
 
-.modal-help{
+.modal-help {
   text-align: right;
   padding: 10px;
-
 }
-.modal-help a{
+.modal-help a {
   text-decoration: none;
   color: blue;
 }
 
-
 @keyframes modalSlideDown {
-  from{
-    opacity:0.2;
-    transform: translateY(-50%);   
+  from {
+    opacity: 0.2;
+    transform: translateY(-50%);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.map > img{
-  
-  width:100%;
-  display:block;
-  
-  
-   /* filter: brightness(1); */
+.map > img {
+  width: 100%;
+  display: block;
+
+  /* filter: brightness(1); */
   /* filter:grayscale(0.4); */
 }
 
-.footer-div{
+.footer-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-.footer-div{
-  
+.footer-div {
   min-height: 100px;
 }
 
@@ -481,13 +456,110 @@ nav li:hover .navigation_bar__left__subnav {
   font-size: 20px;
   margin-left: 2px;
 }
-.footer-div div+div{
+.footer-div div + div {
   margin: 10px 0;
 }
 .footer-div div a {
   color: black;
 }
-.footer-div div a:hover{
+.footer-div div a:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+.hidden {
+  display: none;
+}
+/*PC*/
+@media (min-width: 1024px) {
+}
+
+/* Tablet */
+@media (min-width: 741px) and (max-width: 1023px) {
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+  #header > #navigation_bar > .navigation_bar__left {
+    flex-direction: column;
+    overflow: hidden;
+    /* overflow: visible; */
+    height: 46px;
+  }
+  #header > #navigation_bar .nav_search_container .nav_input_search,
+  #header > #navigation_bar .nav_search_container .nav_search {
+    display: none;
+  }
+  #header > #navigation_bar .nav_search_container .nav_list {
+    line-height: 46px;
+    font-size: 1.4rem;
+    color: black;
+    background: #ccc;
+    padding: 10px;
+  }
+  .content__about-text{
+    margin: 0 10px;
+  }
+  .content_about-members > ul {
+    flex-direction: column;
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .content_about-members li > img {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tour-places {
+    flex-direction: column;
+  }
+  .tour-places > .tour-places__place {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .tour .tour__content {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .content__contact {
+    flex-direction: column;
+  }
+
+  .content__contact .right-form {
+    flex-direction: row;
+  }
+  .right__name {
+    flex: 100%;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    display: block;
+  }
+  .right__email {
+    flex: 100%;
+    padding: 10px 5px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
+  .right__message {
+    flex: 100%;
+    padding: 10px 5px;
+  }
+  .navigation_bar__left li {
+    display: block;
+    width: 100%;
+  }
+  #header > #navigation_bar > .navigation_bar__left {
+    width: 100%;
+  }
+  nav li:hover > a {
+    background: black;
+    color: white;
+  }
+  .modal-container {
+    width: 95%;
+  }
+  
 }
