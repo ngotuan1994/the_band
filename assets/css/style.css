@@ -37,7 +37,7 @@ html {
   margin-top: 46px;
   padding-top: 50%;
   position: relative;
-  background: url(/assets/img/la.jpg) center / cover no-repeat;
+  background: url('../img/la.jpg') center / cover no-repeat;
   z-index: -9;
 }
 
